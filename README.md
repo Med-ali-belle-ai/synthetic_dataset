@@ -80,8 +80,9 @@ Each `.txt` label file follows the YOLO instance segmentation format —
 one line per hair instance: `0 x1 y1 x2 y2 ... xN yN` with all coordinates normalised to `[0, 1]`.
 
 ---
+## Download
 
-## License
+The dataset can be downloaded using the following link:
 
-The synthetic images and labels are released under **CC BY 4.0**.
-The underlying real scalp backgrounds used during generation are not distributed.
+[Download SynTrich dataset](https://drive.google.com/file/d/1jJy0TSj40F5ZkstXLRbciJPlVrtycHyt/view?usp=sharing)
+
