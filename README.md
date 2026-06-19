@@ -70,6 +70,7 @@ Five generators reproduce distinct clinical presentations found in trichoscopy p
 ## File structure
 
 synthetic_v3/
+
 ├── images/          
 ├── labels/ # YOLO instance segmentation labels (.txt)
 
