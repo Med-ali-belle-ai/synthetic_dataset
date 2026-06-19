@@ -46,9 +46,8 @@ $$
 
 where $d_i^{\text{scalp}} / d_j^{\text{seg}}$ corrects for the magnification difference between the target background and the segment source, and $m \sim \mathcal{U}(0.6, 1.4)$ simulates intra-scalp zoom variation.
 Segments are geometrically augmented (horizontal flip, rotation aligned to the dominant growth direction) and photometrically augmented (luminance-mapped tinting across five colour palettes to reproduce hair colours from white to black).
-A shared photometric degradation — radial vignetting, Gaussian blur, additive noise, JPEG re-encoding — is applied to the whole image so that hair boundaries receive the same treatment as the surrounding scalp.
+A shared photometric degradation, radial vignetting, Gaussian blur, additive noise, JPEG re-encoding is applied to the whole image so that hair boundaries receive the same treatment as the surrounding scalp.
 Because every placement is a fully recorded geometric transform, **per-hair binary instance masks are derived at zero additional cost**.
-
 
 ## Image-type statistics
 
@@ -70,16 +69,12 @@ Five generators reproduce distinct clinical presentations found in trichoscopy p
 
 ## File structure
 
-```
 synthetic_v3/
 ├── images/
-│   ├── train/       # 18,000 images (.jpg)
-│   └── val/         # 2,000 images (.jpg)
-├── labels/
-│   ├── train/       # YOLO instance segmentation labels (.txt)
-│   └── val/
-└── dataset.yaml     # YOLO dataset config (nc: 1, names: [hair_shaft])
-```
+│   
+│           )
+├── labels/ # YOLO instance segmentation labels (.txt)
+
 
 Each `.txt` label file follows the YOLO instance segmentation format —
 one line per hair instance: `0 x1 y1 x2 y2 ... xN yN` with all coordinates normalised to `[0, 1]`.
