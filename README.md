@@ -83,5 +83,5 @@ one line per hair instance: `0 x1 y1 x2 y2 ... xN yN` with all coordinates norma
 
 The dataset can be downloaded using the following link:
 
-[Download SynTrich dataset](https://drive.google.com/file/d/1jJy0TSj40F5ZkstXLRbciJPlVrtycHyt/view?usp=sharing)
+[Download SynTrich dataset](https://drive.google.com/file/d/1LaPAnvLhp_3yyXmp0i0Nm5Z5_qGSdf3Y/view?usp=sharing)
 
